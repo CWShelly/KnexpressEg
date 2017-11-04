@@ -17,7 +17,7 @@ module.exports = {
     test: {
         client: 'postgresql',
         connection: {
-            database: 'sample',
+            database: 'test_sample',
 
         },
         pool: {
