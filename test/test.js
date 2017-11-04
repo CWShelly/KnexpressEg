@@ -8,6 +8,7 @@ const request = chai.request;
 const app = require(__dirname + '/../server/_server');
 const port = 4000;
 
+console.log('the test');
 describe('the requests', ()=>{
 
     before((done)=>{
@@ -66,7 +67,7 @@ describe('the requests', ()=>{
         done();
     });
 
-    
+
     });
 
 
