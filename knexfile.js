@@ -1,13 +1,13 @@
-module.exports = {
-
-    development: {
-        client: 'postgresql',
-        connection: {
-            database: 'sampleDB'
-        }
-    }
-};
-
+// module.exports = {
+//
+//     development: {
+//         client: 'postgresql',
+//         connection: {
+//             database: 'sampleDB'
+//         }
+//     }
+// };
+//
 
 // Update with your config settings.
 

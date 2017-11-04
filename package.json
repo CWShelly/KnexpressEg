@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "start": "node server/server"
+    "test": "node node_modules/mocha/bin/mocha --exit",
+    "start": "node server/server",
+    "dev_test":"knex migrate:latest"
   },
   "repository": {
     "type": "git",
