@@ -5,9 +5,23 @@ const expect = chai.expect;
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 const request = chai.request;
-
+const app = require(__dirname + '/../server/_server');
+const port = 4000;
 
 describe('the requests', ()=>{
+
+    before((done)=>{
+
+        this.server = app(port, console.log('up on' + port));
+        done();
+    });
+
+    after((done)=>{
+        this.server.close(()=>{
+            done();
+        });
+    });
+
 
     beforeEach(function(done) {
         knex.migrate.rollback()
